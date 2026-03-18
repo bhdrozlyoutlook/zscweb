@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "slug": "turkiyenin-gelecegi",
+    "title": "Türkiye'nin Geleceği: Gençlik ve Teknoloji",
+    "excerpt": "Ülkemizin geleceği, gençlerimizin eğitimine ve teknolojiye yapılan yatırımlarda yatıyor.",
+    "content": "<p>Türkiye, genç ve dinamik nüfusuyla büyük bir potansiyele sahip. Bu potansiyeli değerlendirmek için eğitim ve teknoloji alanında köklü reformlara ihtiyacımız var.</p>\n\n<h2>Eğitimde Dönüşüm</h2>\n<p>Eğitim sistemimizi 21. yüzyılın gereksinimlerine göre yeniden yapılandırmalıyız. Eleştirel düşünme, problem çözme ve yaratıcılık becerilerini ön plana çıkaran bir yaklaşım benimsememiz gerekiyor.</p>\n\n<h2>Teknolojide Liderlik</h2>\n<p>Dijital dönüşüm artık bir seçenek değil, zorunluluk. Yapay zeka, blockchain ve yeşil teknolojiler alanında yatırımlarımızı artırmalıyız.</p>",
+    "date": "2024-01-15",
+    "category": "Vizyon",
+    "image": "/images/blog/blog-1.jpg",
+    "readTime": "5 dk"
+  },
+  {
+    "id": "2",
+    "slug": "sivil-toplum-ve-demokrasi",
+    "title": "Sivil Toplum ve Demokrasi",
+    "excerpt": "Güçlü bir demokrasi, güçlü sivil toplum kuruluşları üzerine inşa edilir.",
+    "content": "<p>Sivil toplum kuruluşları, demokratik toplumların vazgeçilmez yapı taşlarıdır. Vatandaşların sesini duyuran, hakları koruyan ve toplumsal değişimi sağlayan bu kuruluşlar, devlet ile birey arasında köprü görevi görür.</p>\n\n<h2>STK'ların Önemi</h2>\n<p>Sivil toplum kuruluşları; eğitim, sağlık, çevre ve insan hakları gibi pek çok alanda kritik rol üstlenir.</p>",
+    "date": "2024-01-10",
+    "category": "Sivil Toplum",
+    "image": "/images/blog/blog-2.jpg",
+    "readTime": "4 dk"
+  },
+  {
+    "id": "3",
+    "slug": "ekonomide-yeni-donem",
+    "title": "Ekonomide Yeni Dönem",
+    "excerpt": "Sürdürülebilir ekonomik büyüme için yenilikçi politikalara ihtiyacımız var.",
+    "content": "<p>Küresel ekonomik dönüşüm sürecinde Türkiye'nin konumunu güçlendirmek için stratejik adımlar atmalıyız.</p>\n\n<h2>Yatırım Ortamı</h2>\n<p>Yerli ve yabancı yatırımcılar için güvenli, şeffaf ve öngörülebilir bir ortam oluşturmalıyız.</p>",
+    "date": "2024-01-05",
+    "category": "Ekonomi",
+    "image": "/images/blog/blog-3.jpg",
+    "readTime": "6 dk"
+  }
+]

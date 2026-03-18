@@ -1,0 +1,14 @@
+[
+  { "id": "1", "src": "/images/gallery/photo-1.jpg", "alt": "Toplantı fotoğrafı", "category": "Etkinlikler", "date": "2024-01-20", "description": "Uluslararası iş forumu katılımı" },
+  { "id": "2", "src": "/images/gallery/photo-2.jpg", "alt": "Konferans konuşması", "category": "Konuşmalar", "date": "2024-01-15", "description": "Gençlik ve girişimcilik paneli" },
+  { "id": "3", "src": "/images/gallery/photo-3.jpg", "alt": "STK ziyareti", "category": "Sivil Toplum", "date": "2024-01-10", "description": "Eğitim vakfı ziyareti" },
+  { "id": "4", "src": "/images/gallery/photo-4.jpg", "alt": "Basın toplantısı", "category": "Medya", "date": "2024-01-05", "description": "Yeni dönem açıklaması" },
+  { "id": "5", "src": "/images/gallery/photo-5.jpg", "alt": "İş toplantısı", "category": "Etkinlikler", "date": "2024-01-25", "description": "Yönetim kurulu toplantısı" },
+  { "id": "6", "src": "/images/gallery/photo-6.jpg", "alt": "Panel katılımı", "category": "Konuşmalar", "date": "2024-01-22", "description": "Ekonomi zirvesi paneli" },
+  { "id": "7", "src": "/images/gallery/photo-7.jpg", "alt": "Vakıf etkinliği", "category": "Sivil Toplum", "date": "2024-01-18", "description": "Gençlik vakfı açılışı" },
+  { "id": "8", "src": "/images/gallery/photo-8.jpg", "alt": "Röportaj", "category": "Medya", "date": "2024-01-12", "description": "Televizyon röportajı" },
+  { "id": "9", "src": "/images/gallery/photo-9.jpg", "alt": "Ödül töreni", "category": "Etkinlikler", "date": "2024-02-01", "description": "Yılın iş insanı ödül töreni" },
+  { "id": "10", "src": "/images/gallery/photo-10.jpg", "alt": "Konferans sunumu", "category": "Konuşmalar", "date": "2024-02-05", "description": "Dijital dönüşüm konferansı" },
+  { "id": "11", "src": "/images/gallery/photo-11.jpg", "alt": "Okul ziyareti", "category": "Sivil Toplum", "date": "2024-02-08", "description": "Köy okulu ziyareti" },
+  { "id": "12", "src": "/images/gallery/photo-12.jpg", "alt": "Gazete röportajı", "category": "Medya", "date": "2024-02-10", "description": "Ekonomi gazetesi röportajı" }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "title": "Gençlere Yatırım Çağrısı",
+    "source": "Hürriyet",
+    "date": "2024-01-18",
+    "excerpt": "İş insanı Ad Soyad, gençlerin eğitimine ve istihdamına yapılacak yatırımların önemine dikkat çekti.",
+    "link": "#",
+    "image": "/images/press/press-1.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Sivil Toplum Ödülü",
+    "source": "Milliyet",
+    "date": "2024-01-12",
+    "excerpt": "Sivil toplum alanındaki çalışmalarıyla tanınan Ad Soyad, yılın sivil toplum lideri ödülüne layık görüldü.",
+    "link": "#",
+    "image": "/images/press/press-2.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Ekonomi Zirvesi Konuşması",
+    "source": "Sabah",
+    "date": "2024-01-08",
+    "excerpt": "Uluslararası ekonomi zirvesinde konuşan Ad Soyad, Türkiye'nin potansiyelini vurguladı.",
+    "link": "#",
+    "image": "/images/press/press-3.jpg"
+  }
+]

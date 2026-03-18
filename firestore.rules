@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Login akışı: API, users/{uid} okuyarak role kontrolü yapar
+    match /users/{uid} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // İçerik koleksiyonları: herkese açık okuma, yazma yok (API üzerinden)
+    match /blog/{document} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /galeri/{document} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /basin/{document} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Menü öğeleri
+    match /navItems/{document} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Sosyal medya linkleri
+    match /socialLinks/{document} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Mesajlar: iletişim formu yazabilir, okuma yok
+    match /messages/{document} {
+      allow read: if false;
+      allow create: if true;
+      allow update, delete: if false;
+    }
+
+  }
+}
