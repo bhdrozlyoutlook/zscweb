@@ -111,7 +111,7 @@ export default function ToplumInsanPage() {
         <div className="container">
           <blockquote className="max-w-4xl mx-auto text-center">
             <p className="text-2xl md:text-3xl font-light leading-relaxed">
-              &quot;Eğer bir yanlışlık varsa düzeltmek için <span className="text-gray-500">önce ben harekete geçmeliyim.</span>&quot;
+              &quot;Eğer bir yanlışlık varsa düzeltmek için <span className="text-gray-300">önce ben harekete geçmeliyim.</span>&quot;
             </p>
           </blockquote>
         </div>
@@ -266,11 +266,11 @@ export default function ToplumInsanPage() {
       <section className="py-24 bg-gray-900 text-white">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-4">Sosyal Sorumluluk</h2>
+            <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">Sosyal Sorumluluk</h2>
             <p className="text-2xl md:text-3xl font-light text-gray-300 mb-4">
               Hayatım boyunca iyiliğin mümkün olan en sade hâlini önemsedim.
             </p>
-            <p className="text-gray-500">
+            <p className="text-gray-400">
               Bu yüzden gönüllülük, benim için bir &quot;hobi&quot; değil; bir sorumluluk biçimidir.
             </p>
           </div>
@@ -284,7 +284,7 @@ export default function ToplumInsanPage() {
                 <div className="relative">
                   <h3 className="text-2xl font-semibold mb-4">{org.name}</h3>
                   <p className="text-gray-400 mb-6 leading-relaxed">{org.desc}</p>
-                  <p className="text-sm text-gray-500 italic border-t border-gray-800 pt-4">
+                  <p className="text-sm text-gray-400 italic border-t border-gray-800 pt-4">
                     &quot;{org.quote}&quot;
                   </p>
                 </div>

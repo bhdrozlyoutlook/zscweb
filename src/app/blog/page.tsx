@@ -61,7 +61,7 @@ export default async function BlogPage() {
                 <div className="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/10 transition-colors duration-500" />
               </div>
               <div className="bg-gray-900 p-12 lg:p-16 flex flex-col justify-center">
-                <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
+                <div className="flex items-center gap-4 text-sm text-gray-400 mb-6">
                   <span className="text-white font-medium">{featuredPost.category}</span>
                   <span>•</span>
                   <span>{featuredPost.date}</span>
@@ -160,7 +160,7 @@ export default async function BlogPage() {
       <section className="py-24 bg-gray-900">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="text-sm uppercase tracking-widest text-gray-500 mb-6">Bülten</p>
+            <p className="text-sm uppercase tracking-widest text-gray-400 mb-6">Bülten</p>
             <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">Yeni Yazılardan Haberdar Olun</h2>
             <p className="text-gray-400 mb-10">Yeni yazılar ve düşüncelerimden haberdar olmak için e-posta bültenine abone olun.</p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">

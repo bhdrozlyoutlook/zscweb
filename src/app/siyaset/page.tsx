@@ -71,7 +71,7 @@ export default function SiyasetPage() {
         <div className="container">
           <blockquote className="max-w-4xl mx-auto text-center">
             <p className="text-2xl md:text-3xl font-light leading-relaxed">
-              &quot;Fayda üretmeyen bir ömür, <span className="text-gray-500">eksik bir ömürdür.</span>&quot;
+              &quot;Fayda üretmeyen bir ömür, <span className="text-gray-300">eksik bir ömürdür.</span>&quot;
             </p>
           </blockquote>
         </div>
@@ -226,7 +226,7 @@ export default function SiyasetPage() {
       <section className="py-24 bg-gray-900 text-white">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-4">Siyasete Bakışım</h2>
+            <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">Siyasete Bakışım</h2>
             <p className="text-3xl md:text-4xl font-light text-white">
               Üç Temel Sütun
             </p>

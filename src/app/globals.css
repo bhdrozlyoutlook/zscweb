@@ -27,6 +27,10 @@
   --color-foreground: var(--foreground);
   --color-foreground-muted: var(--foreground-muted);
 
+  /* Darken default Tailwind gray scale for better readability */
+  --color-gray-400: #6b7280;
+  --color-gray-500: #4b5563;
+
   /* Eski isimleri yeni renklerle eşleştir */
   --color-dark-950: var(--gray-900);
   --color-dark-900: var(--gray-800);

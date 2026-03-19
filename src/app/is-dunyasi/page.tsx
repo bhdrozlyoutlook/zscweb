@@ -80,9 +80,9 @@ export default function IsDunyasiPage() {
         <div className="container">
           <blockquote className="max-w-4xl mx-auto text-center">
             <p className="text-2xl md:text-3xl font-light leading-relaxed">
-              &quot;Türkiye&apos;nin yarınını <span className="text-gray-500">bugünden hazırlamak.</span>&quot;
+              &quot;Türkiye&apos;nin yarınını <span className="text-gray-300">bugünden hazırlamak.</span>&quot;
             </p>
-            <footer className="mt-6 text-gray-500">İş dünyasında attığım her adımın temel motivasyonu budur.</footer>
+            <footer className="mt-6 text-gray-400">İş dünyasında attığım her adımın temel motivasyonu budur.</footer>
           </blockquote>
         </div>
       </section>
@@ -138,7 +138,7 @@ export default function IsDunyasiPage() {
             {/* Content */}
             <div className="bg-gray-900 text-white p-8 md:p-16 flex items-center">
               <div>
-                <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-4">Türkiye Merkezli Global Vizyon</h2>
+                <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">Türkiye Merkezli Global Vizyon</h2>
                 <p className="text-2xl md:text-3xl font-light leading-relaxed mb-8">
                   Türkiye, doğru stratejiler ve doğru yatırımlarla sadece bölgesinde değil,
                   küresel ölçekte söz sahibi bir üretim ve teknoloji üssü olabilir.
@@ -203,7 +203,7 @@ export default function IsDunyasiPage() {
       <section className="py-24 bg-gray-900 text-white">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-4">Ülkem İçin Çalışan Bir Girişimci</h2>
+            <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">Ülkem İçin Çalışan Bir Girişimci</h2>
             <p className="text-2xl md:text-3xl font-light text-gray-300">
               Girişimci ruhumun beslendiği iki ana kaynak var:
             </p>

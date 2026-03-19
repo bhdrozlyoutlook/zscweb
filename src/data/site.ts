@@ -1,11 +1,11 @@
 import { NavItem, SocialLink, BlogPost, GalleryItem, PressItem, TimelineItem, SiteConfig } from '@/types';
 
 export const siteConfig: SiteConfig = {
-  name: "Ad Soyad", // Buraya isim yazılacak
-  title: "Ad Soyad | Siyasetçi & İş İnsanı",
+  name: "Zeki Sertan Çelik",
+  title: "Zeki Sertan Çelik | Siyasetçi & İş İnsanı",
   description: "Türkiye'nin geleceği için çalışan, sivil toplum ve iş dünyasında liderlik eden bir vizyon.",
   keywords: ["siyaset", "iş dünyası", "sivil toplum", "liderlik", "Türkiye"],
-  author: "Ad Soyad",
+  author: "Zeki Sertan Çelik",
   siteUrl: "https://example.com",
 };
 
@@ -209,7 +209,7 @@ export const pressItems: PressItem[] = [
     title: "Gençlere Yatırım Çağrısı",
     source: "Hürriyet",
     date: "2024-01-18",
-    excerpt: "İş insanı Ad Soyad, gençlerin eğitimine ve istihdamına yapılacak yatırımların önemine dikkat çekti.",
+    excerpt: "İş insanı Zeki Sertan Çelik, gençlerin eğitimine ve istihdamına yapılacak yatırımların önemine dikkat çekti.",
     link: "#",
     image: "/images/press/press-1.jpg",
   },
@@ -218,7 +218,7 @@ export const pressItems: PressItem[] = [
     title: "Sivil Toplum Ödülü",
     source: "Milliyet",
     date: "2024-01-12",
-    excerpt: "Sivil toplum alanındaki çalışmalarıyla tanınan Ad Soyad, yılın sivil toplum lideri ödülüne layık görüldü.",
+    excerpt: "Sivil toplum alanındaki çalışmalarıyla tanınan Zeki Sertan Çelik, yılın sivil toplum lideri ödülüne layık görüldü.",
     link: "#",
     image: "/images/press/press-2.jpg",
   },
@@ -227,7 +227,7 @@ export const pressItems: PressItem[] = [
     title: "Ekonomi Zirvesi Konuşması",
     source: "Sabah",
     date: "2024-01-08",
-    excerpt: "Uluslararası ekonomi zirvesinde konuşan Ad Soyad, Türkiye'nin potansiyelini vurguladı.",
+    excerpt: "Uluslararası ekonomi zirvesinde konuşan Zeki Sertan Çelik, Türkiye'nin potansiyelini vurguladı.",
     link: "#",
     image: "/images/press/press-3.jpg",
   },

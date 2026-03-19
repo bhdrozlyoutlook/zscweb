@@ -142,9 +142,9 @@ export default function HakkimdaPage() {
         <div className="container">
           <blockquote className="max-w-4xl mx-auto text-center">
             <p className="text-2xl md:text-4xl font-light leading-relaxed">
-              &quot;Elimden geleni yapmak. Bir konuda faydam dokunacaksa, <span className="text-gray-500">kenarda durmamak.</span>&quot;
+              &quot;Elimden geleni yapmak. Bir konuda faydam dokunacaksa, <span className="text-gray-300">kenarda durmamak.</span>&quot;
             </p>
-            <footer className="mt-8 text-gray-500">Çocukluğumdan beri tek bir ortak çizgim bu oldu.</footer>
+            <footer className="mt-8 text-gray-400">Çocukluğumdan beri tek bir ortak çizgim bu oldu.</footer>
           </blockquote>
         </div>
       </section>
@@ -239,7 +239,7 @@ export default function HakkimdaPage() {
         </div>
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-xs uppercase tracking-widest text-gray-500 mb-8">İnsanlık ve Mücadele</h2>
+            <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-8">İnsanlık ve Mücadele</h2>
             <p className="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-gray-300">
               Hayatım boyunca zulme, haksızlığa, hukuksuzluğa karşı tavır almayı
               hem dini, hem insani, hem ahlaki bir borç bildim.

@@ -46,6 +46,18 @@ export interface PressItem {
   image?: string;
 }
 
+export interface HeroSlide {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  buttonText?: string;
+  buttonLink?: string;
+  order: number;
+  visible: boolean;
+}
+
 export interface TimelineItem {
   year: string;
   title: string;

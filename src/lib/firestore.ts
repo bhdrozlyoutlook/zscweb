@@ -10,11 +10,49 @@ import {
   orderBy,
   setDoc,
 } from 'firebase/firestore';
-import type { BlogPost, GalleryItem, PressItem, NavItem, SocialLink } from '@/types';
+import type { BlogPost, GalleryItem, PressItem, NavItem, SocialLink, HeroSlide } from '@/types';
 import { navItems as defaultNavItems, socialLinks as defaultSocialLinks } from '@/data/site';
 import { getBlogPosts as getLocalBlog, saveBlogPosts, getGalleryItems as getLocalGallery, saveGalleryItems, getPressItems as getLocalPress, savePressItems, getMessages as getLocalMessages, saveMessages } from './data';
 
 export type { ContactMessage } from './data';
+
+// ─── Hero Slides ─────────────────────────────────────────────────────────────
+
+const defaultHeroSlides: Omit<HeroSlide, 'id'>[] = [
+  {
+    title: 'Zeki Sertan Çelik',
+    subtitle: 'İş İnsanı • Siyasetçi • Sivil Toplum',
+    description: 'Topluma değer katmak, fayda üretmek ve hakkı tutup kaldırmak için çalışıyorum.',
+    image: '/images/gallery/profile.png',
+    buttonText: 'Hakkımda',
+    buttonLink: '/hakkimda',
+    order: 0,
+    visible: true,
+  },
+];
+
+export async function getHeroSlides(): Promise<HeroSlide[]> {
+  try {
+    const snap = await getDocs(query(collection(db, 'heroSlides'), orderBy('order', 'asc')));
+    if (snap.empty) return defaultHeroSlides.map((s, i) => ({ ...s, id: String(i) }));
+    return snap.docs.map((d) => ({ id: d.id, ...d.data() } as HeroSlide));
+  } catch {
+    return defaultHeroSlides.map((s, i) => ({ ...s, id: String(i) }));
+  }
+}
+
+export async function addHeroSlide(data: Omit<HeroSlide, 'id'>): Promise<HeroSlide> {
+  const ref = await addDoc(collection(db, 'heroSlides'), data);
+  return { id: ref.id, ...data };
+}
+
+export async function updateHeroSlide(id: string, data: Partial<HeroSlide>): Promise<void> {
+  await updateDoc(doc(db, 'heroSlides', id), data as Record<string, unknown>);
+}
+
+export async function deleteHeroSlide(id: string): Promise<void> {
+  await deleteDoc(doc(db, 'heroSlides', id));
+}
 
 // ─── Blog ────────────────────────────────────────────────────────────────────
 
