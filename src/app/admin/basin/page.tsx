@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import type { PressItem } from '@/types';
+import ImageUpload from '@/components/admin/ImageUpload';
 
 const EMPTY: Omit<PressItem, 'id'> = { title: '', source: '', date: '', excerpt: '', link: '', image: '' };
 
@@ -124,7 +125,7 @@ export default function AdminBasinPage() {
 
                   <span className="hidden md:block text-xs font-medium text-gray-500">{item.date}</span>
 
-                  <div className="flex items-center gap-2 flex-shrink-0">
+                  <div className="flex items-center gap-2 shrink-0">
                     {item.link && item.link !== '#' && (
                       <a
                         href={item.link}
@@ -236,16 +237,13 @@ export default function AdminBasinPage() {
                   className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-sm font-medium text-gray-900 placeholder-gray-400 focus:outline-none focus:border-gray-900 transition-colors"
                 />
               </div>
-              <div>
-                <label className="block text-sm font-bold text-gray-800 mb-2">Görsel Yolu</label>
-                <input
-                  type="text"
-                  value={form.image}
-                  onChange={(e) => set('image', e.target.value)}
-                  placeholder="/images/press/press-4.jpg"
-                  className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-sm font-medium text-gray-900 placeholder-gray-400 focus:outline-none focus:border-gray-900 transition-colors"
-                />
-              </div>
+              <ImageUpload
+                label="Görsel"
+                value={form.image ?? ''}
+                onChange={(url) => set('image', url)}
+                folder="basin"
+                aspect="aspect-video"
+              />
             </div>
             <div className="flex gap-3 px-6 pb-6">
               <button

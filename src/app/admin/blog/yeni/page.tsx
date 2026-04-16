@@ -3,6 +3,7 @@
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import ImageUpload from '@/components/admin/ImageUpload';
 
 function slugify(text: string) {
   return text
@@ -134,16 +135,13 @@ export default function YeniBlogPage() {
                 placeholder="Vizyon, Ekonomi, ..."
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Görsel Yolu</label>
-              <input
-                type="text"
-                value={form.image}
-                onChange={(e) => set('image', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-900 text-gray-900"
-                placeholder="/images/blog/blog-4.jpg"
-              />
-            </div>
+            <ImageUpload
+              label="Görsel"
+              value={form.image}
+              onChange={(url) => set('image', url)}
+              folder="blog"
+              aspect="aspect-video"
+            />
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Okuma Süresi</label>
               <input

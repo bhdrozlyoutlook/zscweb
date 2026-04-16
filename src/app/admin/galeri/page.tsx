@@ -3,9 +3,10 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import type { GalleryItem } from '@/types';
+import ImageUpload from '@/components/admin/ImageUpload';
 
 const EMPTY: Omit<GalleryItem, 'id'> = { src: '', alt: '', category: 'Etkinlikler', date: '', description: '' };
-const CATEGORIES = ['Etkinlikler', 'Konuşmalar', 'Sivil Toplum', 'Medya'];
+const DEFAULT_CATEGORIES = ['Etkinlikler', 'Konuşmalar', 'Sivil Toplum', 'Medya'];
 
 export default function AdminGaleriPage() {
   const [items, setItems] = useState<GalleryItem[]>([]);
@@ -154,18 +155,13 @@ export default function AdminGaleriPage() {
               </button>
             </div>
             <div className="px-6 py-6 space-y-4">
-              <div>
-                <label className="block text-sm font-bold text-gray-800 mb-2">Görsel Yolu <span className="text-red-500">*</span></label>
-                <input
-                  autoFocus
-                  type="text"
-                  required
-                  value={form.src}
-                  onChange={(e) => set('src', e.target.value)}
-                  placeholder="/images/gallery/photo-13.jpg"
-                  className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-sm font-medium text-gray-900 placeholder-gray-400 focus:outline-none focus:border-gray-900 transition-colors"
-                />
-              </div>
+              <ImageUpload
+                label="Görsel *"
+                value={form.src}
+                onChange={(url) => set('src', url)}
+                folder="galeri"
+                aspect="aspect-square"
+              />
               <div>
                 <label className="block text-sm font-bold text-gray-800 mb-2">Alt Metin <span className="text-red-500">*</span></label>
                 <input
@@ -179,13 +175,17 @@ export default function AdminGaleriPage() {
               </div>
               <div>
                 <label className="block text-sm font-bold text-gray-800 mb-2">Kategori</label>
-                <select
+                <input
+                  type="text"
+                  list="galeri-categories"
                   value={form.category}
                   onChange={(e) => set('category', e.target.value)}
+                  placeholder="Örn. Etkinlikler"
                   className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-sm font-medium text-gray-900 focus:outline-none focus:border-gray-900 transition-colors"
-                >
-                  {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
-                </select>
+                />
+                <datalist id="galeri-categories">
+                  {[...new Set([...DEFAULT_CATEGORIES, ...items.map((i) => i.category)])].map((c) => <option key={c} value={c} />)}
+                </datalist>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>

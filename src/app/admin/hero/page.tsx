@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import type { HeroSlide } from '@/types';
+import ImageUpload from '@/components/admin/ImageUpload';
 
 const EMPTY: Omit<HeroSlide, 'id'> = {
   title: '',
@@ -167,7 +168,7 @@ export default function AdminHeroPage() {
               >
                 <div className="flex items-stretch">
                   {/* Image Preview */}
-                  <div className="w-48 h-32 relative flex-shrink-0 bg-gray-200">
+                  <div className="w-48 h-32 relative shrink-0 bg-gray-200">
                     {slide.image && (
                       <Image
                         src={slide.image}
@@ -289,24 +290,13 @@ export default function AdminHeroPage() {
 
             {/* Modal Body */}
             <div className="p-8 space-y-5">
-              {/* Image Preview */}
-              {form.image && (
-                <div className="relative w-full h-48 bg-gray-100 rounded-xl overflow-hidden">
-                  <Image src={form.image} alt="Preview" fill className="object-cover" />
-                </div>
-              )}
-
-              {/* Image URL */}
-              <div>
-                <label className="block text-sm font-bold text-gray-700 mb-2">Görsel URL *</label>
-                <input
-                  type="text"
-                  value={form.image}
-                  onChange={(e) => set('image', e.target.value)}
-                  placeholder="/images/gallery/slide1.jpg veya https://..."
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl text-gray-900 focus:border-gray-900 focus:outline-none transition-colors"
-                />
-              </div>
+              <ImageUpload
+                label="Görsel *"
+                value={form.image}
+                onChange={(url) => set('image', url)}
+                folder="hero"
+                aspect="aspect-video"
+              />
 
               {/* Title */}
               <div>

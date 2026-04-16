@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import type { GalleryItem } from '@/types';
 
 export default function GaleriPage() {
@@ -65,13 +66,11 @@ export default function GaleriPage() {
                 <button
                   key={item.id}
                   onClick={() => setSelectedImage(item.id)}
-                  className="group relative aspect-[4/3] overflow-hidden bg-gray-200"
+                  className="group relative aspect-4/3 overflow-hidden bg-gray-200"
                 >
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <svg className="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
+                  {item.src && (
+                    <Image src={item.src} alt={item.alt} fill className="object-cover" unoptimized />
+                  )}
                   <div className="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/70 transition-all duration-300">
                     <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center mb-3">
@@ -111,11 +110,11 @@ export default function GaleriPage() {
             </button>
           )}
           <div className="max-w-6xl max-h-[85vh] w-full mx-20 flex flex-col" onClick={(e) => e.stopPropagation()}>
-            <div className="flex-1 bg-gray-900 flex items-center justify-center min-h-0">
-              <div className="w-full h-full max-h-[70vh] flex items-center justify-center">
-                <svg className="w-32 h-32 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+            <div className="flex-1 bg-gray-900 flex items-center justify-center min-h-0 relative">
+              <div className="relative w-full max-h-[70vh] aspect-4/3">
+                {selectedItem.src && (
+                  <Image src={selectedItem.src} alt={selectedItem.alt} fill className="object-contain" unoptimized />
+                )}
               </div>
             </div>
             <div className="bg-black py-6 px-8 flex items-center justify-between">

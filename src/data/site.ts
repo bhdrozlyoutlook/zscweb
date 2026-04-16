@@ -15,7 +15,7 @@ export const navItems: NavItem[] = [
   { label: "Siyaset", href: "/siyaset" },
   { label: "İş Dünyası", href: "/is-dunyasi" },
   { label: "Toplum & İnsan", href: "/toplum-insan" },
-  { label: "Yazılar & Makaleler", href: "/blog" },
+  { label: "Yazılar & Makaleler", href: "/yazilar-makaleler" },
   { label: "Galeri", href: "/galeri" },
   { label: "İletişim", href: "/iletisim" },
 ];

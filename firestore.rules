@@ -11,17 +11,27 @@ service cloud.firestore {
     // İçerik koleksiyonları: herkese açık okuma, yazma yok (API üzerinden)
     match /blog/{document} {
       allow read: if true;
-      allow write: if false;
+      allow write: if true;
     }
 
     match /galeri/{document} {
       allow read: if true;
-      allow write: if false;
+      allow write: if true;
+    }
+
+    match /gallery/{document} {
+      allow read: if true;
+      allow write: if true;
     }
 
     match /basin/{document} {
       allow read: if true;
-      allow write: if false;
+      allow write: if true;
+    }
+
+    match /press/{document} {
+      allow read: if true;
+      allow write: if true;
     }
 
     // Menü öğeleri
@@ -38,6 +48,12 @@ service cloud.firestore {
 
     // Hero slider
     match /heroSlides/{document} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Sayfa içerikleri (hakkimda vb.)
+    match /pages/{document} {
       allow read: if true;
       allow write: if true;
     }

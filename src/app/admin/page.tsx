@@ -63,7 +63,7 @@ export default function AdminLoginPage() {
       {/* ── Sol panel ───────────────────────────────────────────────────── */}
       <div className="hidden lg:flex lg:w-1/2 bg-gray-900 flex-col justify-between p-14 relative overflow-hidden">
         <div className="absolute -bottom-32 -left-32 w-[480px] h-[480px] rounded-full border border-gray-800" />
-        <div className="absolute -bottom-20 -left-20 w-[320px] h-[320px] rounded-full border border-gray-800" />
+        <div className="absolute -bottom-20 -left-20 w-[320px] h-80 rounded-full border border-gray-800" />
         <div className="absolute top-1/2 -right-24 w-[280px] h-[280px] rounded-full border border-gray-800 -translate-y-1/2" />
 
         <div className="relative flex items-center gap-3">
@@ -150,7 +150,7 @@ export default function AdminLoginPage() {
 
             {error && (
               <div className="flex items-center gap-2.5 px-4 py-3 bg-red-50 border border-red-100 rounded-lg text-red-600 text-sm">
-                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 {error}

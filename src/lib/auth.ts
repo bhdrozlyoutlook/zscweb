@@ -1,6 +1,6 @@
 // Edge-compatible auth using Web Crypto API (works in both Node.js and Edge runtimes)
 
-export const SESSION_COOKIE = 'zsc_admin_session';
+export const SESSION_COOKIE = '__session';
 const TOKEN_MAX_AGE = 7 * 24 * 60 * 60 * 1000; // 7 gün
 
 function getSecret(): string {
